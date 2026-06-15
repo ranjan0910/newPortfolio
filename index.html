@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ashish Ranjan — Java Full Stack Developer. Crafting robust, scalable web applications from Bengaluru, India."
+    />
+    <meta
+      name="keywords"
+      content="ashish ranjan, java developer, full stack developer, portfolio, spring boot, react, web developer, bengaluru"
+    />
+    <meta name="author" content="Ashish Ranjan" />
+    <meta name="theme-color" content="#fafffa" />
+    <meta
+      property="og:title"
+      content="Ashish Ranjan — Java Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Ashish Ranjan — Java Full Stack Developer crafting scalable web applications from Bengaluru."
+    />
+    <meta property="og:type" content="website" />
+    <title>Ashish Ranjan — Java Full Stack Developer</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/270/270798.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@300;400&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Devicon (skill logos) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- AOS — Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-bar"></div>
+    </div>
+
+    <!-- ===== NOISE OVERLAY ===== -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- ===== SCROLL PROGRESS ===== -->
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="nav-header" id="nav-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#home" class="nav-wordmark" aria-label="Home">
+          <span class="nav-wordmark-new">New</span>
+          <span class="nav-wordmark-form">Form</span>
+        </a>
+        <div class="nav-right">
+          <button
+            class="nav-menu-label"
+            id="nav-menu-btn"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+          <button
+            class="nav-mark"
+            id="nav-mark-btn"
+            aria-label="Open navigation menu"
+          >
+            ‖
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== MOBILE NAV OVERLAY ===== -->
+    <div
+      class="nav-overlay"
+      id="nav-overlay"
+      role="dialog"
+      aria-label="Navigation menu"
+    >
+      <button
+        class="nav-overlay-close"
+        id="nav-overlay-close"
+        aria-label="Close navigation menu"
+      >
+        Close
+      </button>
+      <div class="nav-overlay-links">
+        <a href="#home" class="nav-overlay-link">Home</a>
+        <a href="#about" class="nav-overlay-link">About</a>
+        <a href="#projects" class="nav-overlay-link">Work</a>
+        <a href="#skills" class="nav-overlay-link">Expertise</a>
+        <a href="#experience" class="nav-overlay-link">Journey</a>
+        <a href="#contact" class="nav-overlay-link">Connect</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero sticky-section" id="home" aria-label="Introduction">
+        <div class="hero-container">
+          <h1 class="hero-headline">
+            <span class="hero-headline-line">
+              <span class="hero-headline-inner">Crafting</span>
+            </span>
+            <span class="hero-headline-line">
+              <span class="hero-headline-inner">Scalable</span>
+            </span>
+            <span class="hero-headline-line">
+              <span class="hero-headline-inner">Code</span>
+            </span>
+          </h1>
+
+          <div class="hero-image-tile">
+            <div class="hero-image-tile-inner">
+              <img
+                src="./images/vidhana-soudha.png"
+                alt="Vidhana Soudha — pen-and-ink architectural sketch"
+              />
+            </div>
+          </div>
+
+          <div class="hero-bottom" data-aos="fade-up" data-aos-delay="400">
+            <div class="glass-card-3d" data-tilt>
+              <div class="glass-card-inner">
+                <div class="glass-card-shine"></div>
+                <span class="tick-mark" aria-hidden="true"></span>
+                <p class="hero-subtitle" style="margin-top: 16px">
+                  Java Full Stack Developer building robust web applications
+                  with clean architecture and modern technologies. Based in
+                  Bengaluru, India.
+                </p>
+                <div class="hero-actions">
+                  <a href="#projects" class="btn-voltage" id="hero-cta">
+                    <span>View My Work</span>
+                    <span class="arrow">→</span>
+                  </a>
+                  <a
+                    href="./ranjan_resume.pdf"
+                    class="btn-ghost"
+                    download="Ashish_Ranjan_Resume"
+                  >
+                    Download Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT SECTION ===== -->
+      <section class="section sticky-section" id="about" aria-label="About">
+        <div class="section-inner">
+          <p class="section-label" data-aos="fade-up">About</p>
+          <h2
+            class="section-headline section-headline--sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Hello, I'm<br />Ashish Ranjan
+          </h2>
+
+          <div class="about-grid">
+            <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+              <p class="about-body">
+                I'm a Java Full Stack Developer with a passion for building
+                enterprise-grade web applications. My expertise spans the entire
+                stack — from crafting responsive, interactive frontends with
+                HTML, CSS, JavaScript, and React, to designing robust backend
+                systems using Java Spring Boot, Hibernate, and JDBC.
+              </p>
+              <p class="about-body">
+                I work with MySQL and MongoDB for data persistence, and leverage
+                Docker and Kubernetes for containerized cloud deployments. Every
+                line of code I write aims for clarity, scalability, and
+                real-world impact.
+              </p>
+              <p class="about-location">BTM Layout, Bengaluru, Karnataka</p>
+              <span class="tick-mark tick-mark--long" aria-hidden="true"></span>
+            </div>
+            <div class="about-image" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-image-wrap">
+                <img
+                  src="./images/lalbagh-glasshouse.png"
+                  alt="Lalbagh Botanical Garden Glasshouse — vintage ink sketch"
+                  loading="lazy"
+                />
+              </div>
+              <p class="about-caption">
+                Lalbagh Botanical Garden — where Bengaluru breathes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS SECTION ===== -->
+      <section
+        class="section section--projects sticky-section"
+        id="projects"
+        aria-label="Projects"
+      >
+        <div class="section-inner">
+          <div class="projects-bg-accent" aria-hidden="true">
+            <img src="./images/bangalore-palace.png" alt="" loading="lazy" />
+          </div>
+          <p class="section-label" data-aos="fade-up">Portfolio</p>
+          <h2
+            class="section-headline section-headline--alt"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Work
+          </h2>
+
+          <!-- Project 1: E-Commerce -->
+          <article
+            class="project-entry"
+            id="project-ecommerce"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-image-wrap">
+              <img
+                src="./images/project-ecommerce.png"
+                alt="E-Commerce Web Application — monochrome interface mockup"
+                loading="lazy"
+              />
+              <p class="project-caption">Full-stack e-commerce platform</p>
+            </div>
+            <div class="project-info">
+              <p class="section-label">01</p>
+              <h3 class="project-title">E-Commerce<br />Application</h3>
+              <p class="project-desc">
+                An enterprise-grade e-commerce web application built end to end
+                — featuring product catalog management, shopping cart with
+                real-time updates, user authentication, and secure checkout
+                flow. The backend handles complex order processing with Spring
+                Boot while React delivers a seamless storefront experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">
+                  <i class="devicon-java-plain colored"></i>Java
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-spring-original colored"></i>Spring Boot
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-react-original colored"></i>React
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-mysql-plain colored"></i>MySQL
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-hibernate-plain colored"></i>Hibernate
+                </span>
+              </div>
+              <div class="project-link">
+                <a
+                  href="https://github.com/ranjan0910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-ghost"
+                >
+                  View on GitHub →
+                </a>
+              </div>
+              <span
+                class="tick-mark"
+                style="margin-top: 24px"
+                aria-hidden="true"
+              ></span>
+            </div>
+          </article>
+
+          <!-- Project 2: Food Delivery -->
+          <article
+            class="project-entry"
+            id="project-food"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="project-image-wrap">
+              <img
+                src="./images/project-food.png"
+                alt="Food Delivery Application — monochrome interface mockup"
+                loading="lazy"
+              />
+              <p class="project-caption">CRUD food delivery platform</p>
+            </div>
+            <div class="project-info">
+              <p class="section-label">02</p>
+              <h3 class="project-title">Food Delivery<br />Application</h3>
+              <p class="project-desc">
+                A full-stack CRUD application for food delivery — featuring
+                restaurant listings, menu management, order placement with dummy
+                placeholder data, and real-time order status tracking. Built as
+                a comprehensive exercise in end-to-end application architecture
+                with Java Spring and React.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">
+                  <i class="devicon-java-plain colored"></i>Java
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-spring-original colored"></i>Spring Boot
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-react-original colored"></i>React
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-mysql-plain colored"></i>MySQL
+                </span>
+                <span class="tech-pill">
+                  <i class="devicon-docker-plain colored"></i>Docker
+                </span>
+              </div>
+              <div class="project-link">
+                <a
+                  href="https://github.com/ranjan0910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-ghost"
+                >
+                  View on GitHub →
+                </a>
+              </div>
+              <span
+                class="tick-mark tick-mark--short"
+                style="margin-top: 24px"
+                aria-hidden="true"
+              ></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS SECTION ===== -->
+      <section class="section sticky-section" id="skills" aria-label="Skills">
+        <div class="section-inner">
+          <p class="section-label" data-aos="fade-up">Capabilities</p>
+          <h2
+            class="section-headline section-headline--sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Expertise
+          </h2>
+
+          <div class="skills-container" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skills-frosted-bg">
+              <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="skill-category">
+                  <h3 class="skill-category-title">Frontend</h3>
+                  <div class="skill-items">
+                    <div class="skill-item">
+                      <i class="devicon-html5-plain colored"></i>
+                      <span class="skill-item-name">HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-css3-plain colored"></i>
+                      <span class="skill-item-name">CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-javascript-plain colored"></i>
+                      <span class="skill-item-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-react-original colored"></i>
+                      <span class="skill-item-name">React</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                  <h3 class="skill-category-title">Backend</h3>
+                  <div class="skill-items">
+                    <div class="skill-item">
+                      <i class="devicon-java-plain colored"></i>
+                      <span class="skill-item-name">Java</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-spring-original colored"></i>
+                      <span class="skill-item-name">Spring Boot</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-hibernate-plain colored"></i>
+                      <span class="skill-item-name">Hibernate</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-java-plain colored"></i>
+                      <span class="skill-item-name">JDBC</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Database & DevOps -->
+                <div class="skill-category">
+                  <h3 class="skill-category-title">Database & DevOps</h3>
+                  <div class="skill-items">
+                    <div class="skill-item">
+                      <i class="devicon-mysql-plain colored"></i>
+                      <span class="skill-item-name">MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-mongodb-plain colored"></i>
+                      <span class="skill-item-name">MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-docker-plain colored"></i>
+                      <span class="skill-item-name">Docker</span>
+                    </div>
+                    <div class="skill-item">
+                      <i class="devicon-kubernetes-plain colored"></i>
+                      <span class="skill-item-name">Kubernetes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EXPERIENCE SECTION ===== -->
+      <section
+        class="section sticky-section"
+        id="experience"
+        aria-label="Experience"
+      >
+        <div class="section-inner">
+          <p class="section-label" data-aos="fade-up">Background</p>
+          <h2
+            class="section-headline section-headline--sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Journey
+          </h2>
+
+          <div class="experience-timeline">
+            <div
+              class="experience-item"
+              data-aos="flip-3d-y"
+              data-aos-delay="200"
+            >
+              <p class="experience-date">Education</p>
+              <h3 class="experience-role">
+                Bachelor of Computer Science &amp; Engineering
+              </h3>
+              <p class="experience-company">
+                Dr. DY Patil University ,ambi, Pune, Maharashtra
+              </p>
+              <p class="experience-desc">
+                Studied core computer science fundamentals including data
+                structures, algorithms, object-oriented programming, database
+                management systems, operating systems, and software engineering
+                principles. Built a strong foundation in Java and web
+                technologies.
+              </p>
+            </div>
+
+            <div
+              class="experience-item"
+              data-aos="flip-3d-y"
+              data-aos-delay="300"
+            >
+              <p class="experience-date">Internship</p>
+              <h3 class="experience-role">Java Full Stack Developer Intern</h3>
+              <p class="experience-company">Tap Academy, Bengaluru</p>
+              <p class="experience-desc">
+                Completed an intensive full-stack development internship focused
+                on Java, Spring Boot, Hibernate, JDBC, React, MySQL, MongoDB,
+                Docker, and Kubernetes. Built real-world projects including an
+                e-commerce platform and a food delivery application from end to
+                end.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section class="section sticky-section" id="contact" aria-label="Contact">
+        <div class="section-inner">
+          <p class="section-label" data-aos="fade-up">Get in Touch</p>
+          <h2 class="section-headline" data-aos="fade-up" data-aos-delay="100">
+            Connect
+          </h2>
+
+          <div class="contact-grid">
+            <div
+              class="contact-form-wrap"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <form
+                class="contact-form"
+                id="contact-form"
+                aria-label="Contact form"
+              >
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="hello@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    placeholder="Tell me about your project..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-voltage" id="contact-submit">
+                  <span>Send Message</span>
+                  <span class="arrow">→</span>
+                </button>
+              </form>
+            </div>
+
+            <div
+              class="contact-info-side"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <p class="contact-intro">
+                Have a project in mind?<br />
+                Let's build something<br />
+                together.
+              </p>
+              <span
+                class="tick-mark"
+                style="margin-bottom: 32px"
+                aria-hidden="true"
+              ></span>
+              <div class="contact-details">
+                <div class="contact-detail">
+                  <span class="contact-detail-label">Email</span>
+                  <span class="contact-detail-value">
+                    <a href="mailto:ashishranjan12765@gmail.com"
+                      >ashishranjan12765@gmail.com</a
+                    >
+                  </span>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-detail-label">Location</span>
+                  <span class="contact-detail-value"
+                    >BTM Layout, Bengaluru, Karnataka</span
+                  >
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-detail-label">Status</span>
+                  <span
+                    class="contact-detail-value"
+                    style="color: var(--color-voltage)"
+                    >Open to Opportunities</span
+                  >
+                </div>
+              </div>
+              <div class="contact-bangalore-accent">
+                <img
+                  src="./images/bull-temple.png"
+                  alt="Bull Temple Nandi — pen-and-ink travel sketch"
+                  loading="lazy"
+                />
+                <p class="about-caption">Nandi at Bull Temple, Basavanagudi</p>
+              </div>
+              <div class="contact-social">
+                <a
+                  href="https://www.linkedin.com/in/ashish-ranjan09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/ranjan0910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.instagram.com/im.ashu_aditya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="mailto:ashishranjan12765@gmail.com"
+                  class="social-link"
+                >
+                  Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <a href="#home" class="footer-wordmark">
+            <span class="footer-wordmark-new">New</span>
+            <span class="footer-wordmark-form">Form</span>
+          </a>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+            <a href="#skills">Expertise</a>
+            <a href="#experience">Journey</a>
+            <a href="#contact">Connect</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Ashish Ranjan. All rights reserved.</p>
+          <p class="footer-location">Designed in Bengaluru</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <a
+      href="#home"
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Back to top"
+    >
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
