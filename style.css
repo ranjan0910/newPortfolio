@@ -138,6 +138,9 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
   perspective: 1200px;
   transform-style: preserve-3d;
 }
